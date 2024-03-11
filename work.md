@@ -23,8 +23,11 @@
 @Qualifier
     if Multipule Beanare present then to dedermime which bean to called
 
-@
-[GEESE
+@ResponseBody
+The @ResponseBody annotation tells a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object.
 
-[GEREN
-[CE
+@RequestBody
+@RequestBody is used to extract the HTTP request body data, often in JSON or XML format, and deserialize it into a Java object. @RequestParam is used to extract individual parameter values from the request URL or submitted form data.
+    
+@RestController
+    Combination of @Controller and @ResponseBody

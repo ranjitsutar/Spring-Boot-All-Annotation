@@ -31,3 +31,19 @@ The @ResponseBody annotation tells a controller that the object returned is auto
     
 @RestController
     Combination of @Controller and @ResponseBody
+
+
+@GetMapping
+@GetMapping annotation is used for mapping HTTP GET requests onto specific handler methods. It is composed annotation that acts as a shortcut for @RequestMapping(method=RequestMethod. GET).
+@PostMapping
+Specifically, @PostMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. POST) . NOTE: This annotation cannot be used in conjunction with other @RequestMapping annotations that are declared on the same method.
+@PutMapping
+As we know PUT HTTP method is used to update/modify the resource so the @PutMapping annotation is used for mapping HTTP PUT requests onto specific handler methods. Specifically, @PutMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod. PUT).
+@Services
+@Repository
+@EnableAutoConfigurations
+@EnableWebMvc
+@PropertySource
+@Value
+@ConfigureProperties
+@ConditionalOnProperty

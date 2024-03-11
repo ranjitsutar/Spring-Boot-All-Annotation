@@ -60,4 +60,24 @@ As we know PUT HTTP method is used to update/modify the resource so the @PutMapp
 @OneToOne
 @OneToMany
 @ManyToMany
+
+
+
 @EntityListeners
+    Entity listeners are useful for general purpose auditing or logging applications. Entity listeners can be defined using both metadata annotations and a entity metadata XML descriptor file: Annotation: The EntityListeners annotation can be used to denote one or more entity listener classes on an entity class.
+    @PretPersist
+        Before Save
+    @PostPersist
+        After Save
+    @PreUpdate
+    @PostUpdate
+    @PreRemove
+    @PostRemove
+
+
+
+
+@Query
+@Param
+@Transactional
+The @Transactional annotation is metadata that specifies that an interface, class, or method must have transactional semantics (for example, "start a brand new read-only transaction when this method is invoked, suspending any existing transaction").

@@ -21,6 +21,8 @@ public class AnnotationApplication {
 		System.out.println(bean1);
 		bean1.getProductService().createProduct();
 
+		bean1.getCardService().addCard();
+
 	}
 
 

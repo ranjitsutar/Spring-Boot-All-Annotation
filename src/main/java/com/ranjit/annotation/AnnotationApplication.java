@@ -19,6 +19,7 @@ public class AnnotationApplication {
 
 		CategoryService bean1 = container.getBean(CategoryService.class);
 		System.out.println(bean1);
+		bean1.getProductService().createProduct();
 
 	}
 

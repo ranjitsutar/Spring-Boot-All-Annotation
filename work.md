@@ -18,6 +18,7 @@
     we declar the class as a method and use @Bean annotation
 
 @Autowired
+    @Autowired is an annotation in Spring Framework that enables dependency injection for Java classes. It allows Spring to automatically inject dependencies into the class, eliminating the need for manual configuration. This annotation can be used to inject dependencies into fields, methods, and constructors.
 
 @Qualifier
     if Multipule Beanare present then to dedermime which bean to called

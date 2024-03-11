@@ -1,7 +1,10 @@
 package com.ranjit.annotation;
 
+import com.ranjit.annotation.config.MyPropertiesFileConfig;
 import com.ranjit.annotation.service.CategoryService;
 import com.ranjit.annotation.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -9,7 +12,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 
-public class AnnotationApplication {
+public class AnnotationApplication implements CommandLineRunner {
+
+	@Autowired
+	private MyPropertiesFileConfig myPropertiesFileConfig;
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext container= SpringApplication.run(AnnotationApplication.class, args);
@@ -26,5 +32,12 @@ public class AnnotationApplication {
 	}
 
 
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println(myPropertiesFileConfig.getName());
+		System.out.println(myPropertiesFileConfig.getPort());
+		System.out.println(myPropertiesFileConfig.getdB());
 
+
+	}
 }

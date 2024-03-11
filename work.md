@@ -42,8 +42,11 @@ As we know PUT HTTP method is used to update/modify the resource so the @PutMapp
 @Services
 @Repository
 @EnableAutoConfigurations
+    @EnableAutoConfiguration annotation tells Spring Boot to “guess” how you want to configure Spring, based on the jar dependencies that you have added.
 @EnableWebMvc
+    The @EnableWebMvc annotation is used for enabling Spring MVC in an application and works by importing the Spring MVC Configuration from WebMvcConfigurationSupport.
 @PropertySource
+    Spring @PropertySource annotation is used to provide properties file to Spring Environment. This annotation is used with @Configuration classes. Spring PropertySource annotation is repeatable, means you can have multiple PropertySource on a Configuration class.
 @Value
 @ConfigureProperties
 @ConditionalOnProperty

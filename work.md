@@ -9,11 +9,18 @@
 @componentScan
 @ComponentScan is an annotation used in the Spring Framework for auto-detecting and registering Spring-managed components (e.g. beans, controllers, services, repositories, etc.) within a specified package or set of packages.
 
+@component
+    to make the class  as object its used in class leble
+    we cant write own logic
 @Bean
+    it diclar inside class and to make the class as bean object
+    we can write own logice
+    we declar the class as a method and use @Bean annotation
 
 @Autowired
 
 @Qualifier
+    if Multipule Beanare present then to dedermime which bean to called
 
 @
 [GEESE

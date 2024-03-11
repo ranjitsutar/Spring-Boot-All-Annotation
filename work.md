@@ -50,3 +50,14 @@ As we know PUT HTTP method is used to update/modify the resource so the @PutMapp
 @Value
 @ConfigureProperties
 @ConditionalOnProperty
+    In short, the @ConditionalOnProperty enables bean registration only if an environment property is present and has a specific value. By default, the specified property must be defined and not equal to false.
+
+@Bean and @Scope
+@Entity
+@ld
+@GeneratedValue
+@Transient
+@OneToOne
+@OneToMany
+@ManyToMany
+@EntityListeners
